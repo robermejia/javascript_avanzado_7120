@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 01</title>
+    <style>
+        form{
+            display: flex; 
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <form>
+        <label for="practicas">Nota de prácticas</label>
+        <input type="number" id="practicas" required>
+        <label for="parcial">Nota del parcial</label>
+        <input type="number" id="parcial" required>
+        <label for="final">Nota del final</label>
+        <input type="number" id="final" required>        
+        <button type="button" onclick="calcularNotas()">Calcular notas</button>
+    </form>
+    <p id="mensaje"></p>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
