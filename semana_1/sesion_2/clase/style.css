@@ -1,0 +1,11 @@
+* {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+summary {
+    font-weight: bold;
+}
+
+details {
+    margin: 1rem 0;
+}

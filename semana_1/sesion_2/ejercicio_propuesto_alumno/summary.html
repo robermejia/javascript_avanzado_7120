@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="summary.js"></script>
+</head>
+<body>
+    <details>
+        <summary>Ejercicio #1</summary>
+        <p>
+            Ingresar las medidas de los tres lados de un triángulo y mostrar en pantalla si el triángulo es equilátero, isóceles, escaleno o no puede existir.
+        </p>
+        <h4>Medidas de los lados</h4>
+        <input type="number" id="lado1" min="0.01">
+        <input type="number" id="lado2" min="0.01">
+        <input type="number" id="lado3" min="0.01">
+        <p>
+            <button onclick="existeTriangulo()">Verificar existencia</button>
+            <span style="color: green;" id="resultado"></span>
+        </p>
+    </details> 
+    <details>
+        <summary>Ejercicio #2</summary>
+        <p>
+            Convertir un número entero a binario.
+        </p>
+        <h4>Número en base decimal</h4>
+        <input type="number" min="0" step="1" id="numDec">
+        <input type="button" value="convertir a binario" onclick="convertirBinario()">
+        <h4>Número en base 2</h4>
+        <p id="numBin" style="color: cadetblue;">
+            &nbsp;
+        </p>
+        <hr>
+    </details>   
+    <details>
+        <summary>Ejercicio #3</summary>
+        <p>
+            Ingresar un número y devolver la cantidad de sus cifras. Validar que el número es positivo.
+        </p>
+        <h4>Número</h4>
+        <input type="number" min="0" step="1" id="numero">
+        <input type="button" value="Contar cifras" onclick="contarCifras()">
+        <h4>Cantidad de cifras</h4>
+        <p id="cifras" style="color: cornflowerblue;">
+            &nbsp;
+        </p>
+        <hr>
+    </details>  
+    <details>
+        <summary>Ejercicio #4</summary>
+        <p>
+            Ingresar un texto y devolver la cantidad de veces que aparece cada vocal. Por ejemplo, si ingresamos
+            "Alameda" debe devolver a = 3, e = 1, i = 0, o = o y u= 0.
+        </p>
+        <h4>Texto</h4>
+        <textarea id="texto"></textarea>
+        <p>
+            <button onclick="contarVocales()">Contar vocales</button>
+        </p>
+        <div id="resultado">
+<!--             <ul>
+                <li>La vocal <strong>a</strong> aparece <strong>x</strong> veces</li>
+                <li>La vocal <strong>e</strong> aparece <strong>x</strong> veces</li>
+                <li>La vocal <strong>i</strong> aparece <strong>x</strong> veces</li>
+                <li>La vocal <strong>o</strong> aparece <strong>x</strong> veces</li>
+                <li>La vocal <strong>u</strong> aparece <strong>x</strong> veces</li>
+            </ul> -->
+        </div>
+    </details>
+    
+</body>
+</html>
