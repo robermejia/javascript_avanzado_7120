@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      summary {
+        font-weight: bold;
+      }
+      details {
+        margin: 1rem 0;
+      }
+    </style>
+
+    <script>
+      function ejercicio1() {
+        const lado1 = parseFloat(document.getElementById("lado_1").value);
+        const lado2 = parseFloat(document.getElementById("lado_2").value);
+        const lado3 = parseFloat(document.getElementById("lado_3").value);
+
+        if (!lado1 || !lado2 || !lado3 || lado1 < 0 || lado2 < 0 || lado3 < 0) {
+          document.getElementById("resultados_1").innerText =
+            "El triángulo debe tener al menos 3 lados válidos";
+          return;
+        }
+
+        let resultado =
+          lado1 + lado2 > lado3 &&
+          lado1 + lado3 > lado2 &&
+          lado2 + lado3 > lado1;
+        if (!resultado) {
+          document.getElementById("resultados_1").innerText =
+            "El triángulo no puede existir";
+          return;
+        }
+
+        let diferencia = 2;
+        if (lado1 === lado2) diferencia--;
+        if (lado2 === lado3) diferencia--;
+        if (lado3 === lado1) diferencia--;
+
+        if (diferencia < 1) {
+          document.getElementById("resultados_1").innerText =
+            "El triángulo es equilátero";
+        } else if (diferencia === 1) {
+          document.getElementById("resultados_1").innerText =
+            "El triángulo es isóceles";
+        } else {
+          document.getElementById("resultados_1").innerText =
+            "El triángulo es escaleno";
+        }
+      }
+
+      function ejercicio2() {
+        const numero_original = parseInt(
+          document.getElementById("numero_binario").value
+        );
+        if (isNaN(numero_original) || numero_original < 0) {
+          document.getElementById("resultados_2").innerText =
+            "El número debe ser válido y mayor a cero";
+          return;
+        }
+        if (numero_original > Number.MAX_SAFE_INTEGER) {
+          document.getElementById("resultados_2").innerText =
+            "El número ingresado es muy grande";
+          return;
+        }
+
+        let str = numero_original ? "" : "0";
+        for (let i = 0; i < 52; i++) {
+          const expo = Math.pow(2, i);
+          if (expo > numero_original) {
+            break;
+          }
+
+          if (expo & numero_original) {
+            str = "1" + str;
+          } else {
+            str = "0" + str;
+          }
+        }
+        document.getElementById("resultados_2").innerText = str;
+      }
+
+      function ejercicio3() {
+        const numero_original = parseInt(
+          document.getElementById("numero_cantidad").value
+        );
+        if (isNaN(numero_original) || numero_original < 0) {
+          document.getElementById("resultados_3").innerText =
+            "El número debe ser válido y mayor a cero";
+        }
+
+        let current = 0;
+        let count = 1;
+        while (current < numero_original) {
+          current = Math.pow(10, count);
+          count++;
+        }
+        document.getElementById("resultados_3").innerText =
+          "El número de cifras es: " + (count - 1);
+      }
+
+      function ejercicio4() {
+        const texto = document.getElementById("texto").value || "";
+        const textoArray = texto.split("");
+        let conteoA = 0;
+        let conteoE = 0;
+        let conteoI = 0;
+        let conteoO = 0;
+        let conteoU = 0;
+
+        for (let i = 0; i < textoArray.length; i++) {
+          const letra = textoArray[i].toLowerCase();
+          switch (letra) {
+            case "a":
+              conteoA++;
+              break;
+
+            case "e":
+              conteoE++;
+              break;
+
+            case "i":
+              conteoI++;
+              break;
+
+            case "o":
+              conteoO++;
+              break;
+
+            case "u":
+              conteoU++;
+              break;
+          }
+        }
+
+        document.getElementById(
+          "resultados_4"
+        ).innerText = `a = ${conteoA}, e = ${conteoE}, i = ${conteoI}, o = ${conteoO}, u = ${conteoU} `;
+      }
+    </script>
+  </head>
+  <body>
+    <details>
+      <summary>Ejercicio #1</summary>
+      <p>
+        Ingresar las medidas de los tres lados de un triángulo y mostrar en
+        pantalla si el triángulo es equilátero, isóceles, escaleno o no puede
+        existir.
+      </p>
+
+      <form action="#" method="get" onsubmit="return false">
+        <p>
+          <label>Lado 1</label>
+          <input type="number" min="0.01" id="lado_1" value="0" />
+        </p>
+        <p>
+          <label>Lado 2</label>
+          <input type="number" min="0.01" id="lado_2" value="0" />
+        </p>
+        <p>
+          <label>Lado 3</label>
+          <input type="number" min="0.01" id="lado_3" value="0" />
+        </p>
+
+        <button type="button" onclick="ejercicio1()">
+          Verificar triángulo
+        </button>
+
+        <div id="resultados_1"></div>
+      </form>
+    </details>
+    <details>
+      <summary>Ejercicio #2</summary>
+      <p>Convertir un número entero a binario.</p>
+
+      <form action="#" method="get" onsubmit="return false">
+        <p>
+          <label>Número</label>
+          <input type="number" id="numero_binario" value="0" />
+        </p>
+        <button type="button" onclick="ejercicio2()">
+          Convertir a binario
+        </button>
+
+        <div id="resultados_2"></div>
+      </form>
+    </details>
+    <details>
+      <summary>Ejercicio #3</summary>
+      <p>
+        Ingresar un número y devolver la cantidad de sus cifras. Validar que el
+        número es positivo.
+      </p>
+
+      <form action="#" method="get" onsubmit="return false">
+        <p>
+          <label>Número</label>
+          <input type="number" id="numero_cantidad" value="0" />
+        </p>
+        <button type="button" onclick="ejercicio3()">
+          Calcular la cantidad de cifras
+        </button>
+
+        <div id="resultados_3"></div>
+      </form>
+    </details>
+    <details>
+      <summary>Ejercicio #4</summary>
+      <p>
+        Ingresar un texto y devolver la cantidad de veces que aparece cada
+        vocal. Por ejemplo, si ingresamos "Alameda" debe devolver a = 3, e = 1,
+        i = 0, o = o y u= 0.
+      </p>
+
+      <form action="#" method="get" onsubmit="return false">
+        <p>
+          <label>Texto</label> <br />
+          <textarea id="texto"></textarea>
+        </p>
+        <button type="button" onclick="ejercicio4()">Contar vocales</button>
+
+        <div id="resultados_4"></div>
+      </form>
+    </details>
+  </body>
+</html>
