@@ -37,16 +37,38 @@ function convertirBinario() {
     document.getElementById("numBin").innerHTML = bin;
 }
 
-function contarCifras() {
-    let numero = parseInt(document.getElementById("numero").value);
-    let aux;
-    document.getElementById("cifras").innerHTML = aux;
-    if (!Number.isInteger(numero)) {
-        return aux = "Error: El input debe ser un entero.";
-    }
-    if (numero === 0) return aux = 1;
-    if (numero < 0) numero = aux = -numero; // Manejo de números negativos
-    return aux = Math.floor(Math.log10(numero)) + 1;
-}
+function contarVocales() {
+    let texto = document.getElementById("texto").value; // Obtiene el valor del input como cadena
+    let a = 0;  // Inicializa los contadores como números
+    let e = 0;
+    let i = 0;
+    let o = 0;
+    let u = 0;
+    let total = 0;
 
-function contarVocales() {}
+    texto = texto.toLowerCase();
+
+    for (let j = 0; j < texto.length; j++) {
+        const caracter = texto[j];
+        switch (caracter) {
+            case 'a': a++; break;
+            case 'e': e++; break;
+            case 'i': i++; break;
+            case 'o': o++; break;
+            case 'u': u++; break;
+        }
+    }
+
+    total = a + e + i + o + u; // Calcula el total
+
+    // Actualiza los elementos HTML con los resultados.  Asegúrate de que los IDs en tu HTML coincidan.
+    document.getElementById("a").textContent = a;
+    document.getElementById("e").textContent = e;
+    document.getElementById("i").textContent = i;
+    document.getElementById("o").textContent = o;
+    document.getElementById("u").textContent = u;
+    document.getElementById("total").textContent = total;
+
+
+    //return { a, e, i, o, u, total }; // Puedes retornar un objeto si lo necesitas en otra parte del código.
+}
