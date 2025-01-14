@@ -49,4 +49,43 @@ function contarCifras() {
     document.getElementById("cifras").textContent = contador;
 }
 
-function contarVocales() {}
+function contarVocales() {
+    let a = 0,
+        e = 0,
+        i = 0,
+        o = 0,
+        u = 0;
+    let texto = document.getElementById('texto').value;
+    let res = document.getElementById('resultado');
+    texto = texto.toLowerCase(); // Convertir a minúsculas
+    for (let idx = 0; idx < texto.length; idx++) {
+        //console.log(texto[idx]);
+        switch (texto[idx]) {
+            case 'a':
+                a++;
+                break;
+            case 'e':
+                e++;
+                break;
+            case 'i':
+                i++;
+                break;
+            case 'o':
+                o++;
+                break;
+            case 'u':
+                u++;
+                break;
+            default:
+                break;
+        }
+    }
+    //console.log(a,e,i,o,u);
+    res.innerHTML = `<ul>
+            <li>La vocal <strong>a</strong> aparece <strong>${a}</strong> veces</li>
+            <li>La vocal <strong>e</strong> aparece <strong>${e}</strong> veces</li>
+            <li>La vocal <strong>i</strong> aparece <strong>${i}</strong> veces</li>
+            <li>La vocal <strong>o</strong> aparece <strong>${o}</strong> veces</li>
+            <li>La vocal <strong>u</strong> aparece <strong>${u}</strong> veces</li>
+        </ul>`;
+}
