@@ -10,3 +10,12 @@
 
 ### S01.s2 - Números, Operadores, Spread, Funciones
 [![YouTube Video](https://img.youtube.com/vi/4l3TjE0TNfE/1.jpg)](https://www.youtube.com/watch?v=4l3TjE0TNfE)
+
+### S02.s1 - String, concatenación, extensión, sintaxis, interpolación, Expresiones regulares - parter 1
+[![YouTube Video](https://img.youtube.com/vi/uIEiAjgSAA8/1.jpg)](https://www.youtube.com/watch?v=uIEiAjgSAA8)
+
+### S02.s1 - String, concatenación, extensión, sintaxis, interpolación, Expresiones regulares - parter 2
+[![YouTube Video](https://img.youtube.com/vi/M4jyhaKVHsk/1.jpg)](https://www.youtube.com/watch?v=M4jyhaKVHsk)
+
+### S02.s2 - Arreglos, propiedades funciones, iteraciones, clases, JSON, Colecciones, mapas, ope. flecha
+[![YouTube Video](https://img.youtube.com/vi/Jp-A6ev-WBU/1.jpg)](https://www.youtube.com/watch?v=Jp-A6ev-WBU)

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 2 - Arrays</title>
+</head>
+<body>
+    <h3>Meses del año</h3>
+    <div id="meses"></div>
+    
+    <h3>Estaciones del año</h3>
+    <div id="estaciones"></div>
+    <script>
+        // Array Unidimensional
+        let numeroA = [1,2,3,4,56,7,8];
+        let numeroB = [1,"Tres",3,"Cuatro",5,"Seis",7,"Ocho"];
+        let nombresA = ["Roberto", "Gustavo", "Erica"];
+        let nombresB = new Array("Marco", "Pedro", "Juan");
+        console.log(numeroA,numeroB,nombresA,nombresB);
+
+        // Array Bidimensional
+        let navidad = [["paneton",15.07],["chocolate",5.5]];
+        console.log(navidad);
+        
+        const MESES = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+        let numeros = [28, 19, 29, 23, 21, 26];
+        const ESTACIONES = ['Primavera', 'Verano', 'Otoño', 'Invierno'];
+        console.log(MESES);
+        console.log(numeros);
+        console.log(ESTACIONES);
+        //Mostrar los meses en el navegador
+        let codigoMeses = "<ol>";
+        for (let i = 0; i < MESES.length; i++) {
+            codigoMeses += `<li>${MESES[i]}</li>`;            
+        }
+        codigoMeses += "</ol>"
+        document.getElementById('meses').innerHTML = codigoMeses;
+
+        codigo = "<ol>";
+        for (const e of ESTACIONES) {
+            codigo += `<li>${e}</li>`;
+        }
+        codigo += "</ol>";
+        document.getElementById('estaciones').innerHTML = codigo;
+
+    </script>
+    
+</body>
+</html>
