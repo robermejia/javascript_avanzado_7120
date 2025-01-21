@@ -19,3 +19,6 @@
 
 ### S02.s2 - Arreglos, propiedades funciones, iteraciones, clases, JSON, Colecciones, mapas, ope. flecha
 [![YouTube Video](https://img.youtube.com/vi/Jp-A6ev-WBU/1.jpg)](https://www.youtube.com/watch?v=Jp-A6ev-WBU)
+
+### S03.s1 - PC 1
+[![YouTube Video](https://img.youtube.com/vi/UKu4P1wqSqE/1.jpg)](https://www.youtube.com/watch?v=UKu4P1wqSqE)
