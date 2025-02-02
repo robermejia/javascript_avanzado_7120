@@ -22,3 +22,11 @@
 
 ### S03.s1 - PC 1
 [![YouTube Video](https://img.youtube.com/vi/UKu4P1wqSqE/1.jpg)](https://www.youtube.com/watch?v=UKu4P1wqSqE)
+
+### S04.s1 - Angular 19, Node, npm, Directivas de atributo y Directivas estructurales
+[![YouTube Video](https://img.youtube.com/vi/7QfDAHfUT24/1.jpg)](https://www.youtube.com/watch?v=7QfDAHfUT24)
+
+### S04.s2 - Componentes de Angular
+[![YouTube Video](https://img.youtube.com/vi/w65pB4DDHdw/1.jpg)](https://www.youtube.com/watch?v=w65pB4DDHdw)
+
+
