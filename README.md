@@ -29,4 +29,7 @@
 ### S04.s2 - Componentes de Angular
 [![YouTube Video](https://img.youtube.com/vi/w65pB4DDHdw/1.jpg)](https://www.youtube.com/watch?v=w65pB4DDHdw)
 
+### S05.s1 - Métodos REST, JSON, Postman, Thunder Client, Insomnia
+[![YouTube Video](https://img.youtube.com/vi/4JkY-Auz48c/1.jpg)](https://www.youtube.com/watch?v=4JkY-Auz48c)
+
 
