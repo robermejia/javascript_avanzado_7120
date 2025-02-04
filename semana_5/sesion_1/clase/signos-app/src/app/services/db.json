@@ -1,0 +1,28 @@
+{
+  "signos": [
+    {
+      "id": 1,
+      "nombre": "Aries",
+      "inicio": "21-03",
+      "fin": "20-04"
+    },
+    {
+      "id": 2,
+      "nombre": "Tauro",
+      "inicio": "21-04",
+      "fin": "21-05"
+    },
+    {
+      "id": 3,
+      "nombre": "Géminis",
+      "inicio": "22-05",
+      "fin": "21-06"
+    },
+    {
+      "id": 4,
+      "nombre": "Acuario",
+      "inicio": "20 Enero",
+      "fin": "20 Febrero"
+    }
+  ]
+}
