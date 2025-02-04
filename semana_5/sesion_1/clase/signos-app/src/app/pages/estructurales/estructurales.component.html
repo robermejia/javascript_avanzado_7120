@@ -1,0 +1,22 @@
+<h3>Directivas estructurales</h3>
+<h5>NgIf</h5>
+<p *ngIf="monto &lt; 5">Menor a 5, valor almacenado: {{monto}}</p>
+<p *ngIf="monto === 5">Igual a 5, valor almacenado: {{monto}}</p>
+<p *ngIf="monto &gt; 5">Mayor a 5, valor almacenado: {{monto}}</p>
+
+<h5>NgSwitch</h5>
+<ul [ngSwitch]="dia">
+    <li *ngSwitchCase="'LU'">Lunes</li>
+    <li *ngSwitchCase="'MA'">Martes</li>
+    <li *ngSwitchCase="'MI'">Miércoles</li>
+    <li *ngSwitchCase="'JU'">Jueves</li>
+    <li *ngSwitchCase="'VI'">Viernes</li>
+    <li *ngSwitchCase="'SA'">Sábado</li>
+    <li *ngSwitchCase="'DO'">Domingo</li>
+    <li *ngSwitchDefault>Valor no válido: {{dia}}</li>
+</ul>
+
+<h5>NgFor</h5>
+<ol>
+    <li *ngFor="let m of meses">{{m}}</li>
+</ol>

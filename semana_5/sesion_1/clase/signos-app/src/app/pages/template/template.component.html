@@ -1,0 +1,13 @@
+<h3>Agregar signos y su mes correspondiente</h3>
+<form (ngSubmit)="agregarSigno(); signoForm.reset()" #signoForm="ngForm">
+    <input class="form-control my-2" type="text" name="nombre" [(ngModel)]="signo.nombre" placeholder="Nombre del signo"
+        required>
+    <input class="form-control my-2" type="text" name="mes" [(ngModel)]="signo.inicio"
+        placeholder="Mes principal correspondiente" required>
+    <button type="submit" class="btn btn-sm btn-outline-primary  my-2"
+        [disabled]="!signoForm.form.valid">Enviar</button>
+</form>
+<h6 class="mt-3"><b>Signos</b>: <span class="badge bg-secondary">{{signos.length}}</span></h6>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let sig of signos">{{sig.nombre}} - {{sig.inicio}}</li>
+</ul>

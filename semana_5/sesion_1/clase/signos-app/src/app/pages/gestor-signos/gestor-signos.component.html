@@ -1,0 +1,55 @@
+<h3>Gestor de signos</h3>
+<hr>
+<div class="row">
+    <div class="col-6 col-sm-8">
+        <h4>Signos</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Inicio</th>
+                    <th>Fin</th>
+                    <th colspan="3" class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let s of signos">
+                    <th>{{s.id}}</th>
+                    <td>{{s.nombre}}</td>
+                    <td>{{s.inicio}}</td>
+                    <td>{{s.fin}}</td>
+                    <td class="text-center"><button type="button" class="btn btn-sm btn-info">Ver</button></td>
+                    <td class="text-center">
+                        <button type="button" class="btn btn-sm btn-warning" (click)="editar(s)">
+                            Editar
+                        </button>
+                    </td>
+                    <td class="text-center">
+                        <button type="button" class="btn btn-sm btn-danger" (click)="eliminar(s.id)">
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-6 col-sm-4">
+        <h4>Formulario</h4>
+        <form [formGroup]="formSigno">
+            <input type="hidden" id="id" class="form-control" formControlName="id" />
+            <label for="nombre" class="form-label mt-2">Nombre del signo</label>
+            <input type="text" id="nombre" class="form-control" formControlName="nombre"/>
+            <label for="inicio" class="form-label mt-2">Fecha de inicio</label>
+            <input type="text" id="inicio" class="form-control" formControlName="inicio"/>
+            <label for="fin" class="form-label mt-2">Fecha de fin</label>
+            <input type="text" id="fin" class="form-control" formControlName="fin"/>
+            <p class="text-center mt-3">
+                <button (click)="procesarSigno()" class="btn btn-primary" [disabled]="!formSigno.valid">
+                    {{operacionTexto}}
+                </button>
+            </p>
+        </form>
+        <p>{{insUpd}}</p>
+    </div>
+</div>

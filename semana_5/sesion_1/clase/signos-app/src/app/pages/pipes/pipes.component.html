@@ -1,0 +1,19 @@
+<div>
+    <h3>Pipes de números</h3>
+    <p>{{numero | number: '4.2-3'}}</p>
+    <p>{{numero | number: '3.2-2'}}</p>
+    <p>{{numero * 10 | number: '4.1-5' : 'es-PE'}}</p>
+    <h3>Pipes de monedas</h3>
+    <p>{{moneda | currency : 'CAD' : 'symbol'}}</p>
+    <p>{{moneda | currency : 'USD' : 'symbol'}}</p>
+    <p>{{moneda * 10 | currency : 'CAD' : 'symbol-narrow'}}</p>
+    <p>{{moneda - 1000 | currency : 'PEN' : 'symbol'}}</p>
+    <h3>Pipes de fechas</h3>
+    <p>{{fecha}}</p>
+    <p>{{fecha | date : 'short'}}</p>
+    <p>{{fecha | date : 'medium'}}</p>
+    <p>{{fecha | date : 'long'}}</p>
+    <p>{{fecha | date : 'full'}}</p>
+    <p>Solo la fecha: {{fecha | date : 'dd-MM-yyyy'}}</p>
+    <p>Solo la hora: {{fecha | date : 'hh:mm:ss a'}}</p>
+</div>

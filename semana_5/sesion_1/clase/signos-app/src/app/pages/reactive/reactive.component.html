@@ -1,0 +1,8 @@
+<form [formGroup]="reactivoForm" (ngSubmit)="enviarForm();">
+    <label for="nombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="nombre" formControlName="nombre" required/>
+    <label for="correo" class="form-label">Correo</label>
+    <input type="email" class="form-control" id="correo" formControlName="correo" required/>
+    <button type="submit" class="btn btn-sm btn-outline-primary my-2" [disabled]="!reactivoForm.valid">Enviar</button>
+</form>
+<p class="alert alert-info mt-3" *ngIf="mensaje">{{mensaje}}</p>
