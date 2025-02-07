@@ -1,0 +1,45 @@
+<div class="container">
+    <h2>{{ operacionTexto }} Producto</h2>
+    <form [formGroup]="formProducto" (ngSubmit)="procesarProducto()">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" formControlName="nombre" class="form-control" />
+            <div *ngIf="formProducto.get('nombre')?.invalid && formProducto.get('nombre')?.touched" class="text-danger">
+                El nombre es requerido.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" formControlName="precio" class="form-control" />
+            <div *ngIf="formProducto.get('precio')?.invalid && formProducto.get('precio')?.touched" class="text-danger">
+                El precio es requerido y debe ser mayor o igual a 0.
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">{{ operacionTexto }}</button>
+        <button type="button" class="btn btn-secondary" (click)="formProducto.reset(); operacionTexto = 'Insertar'; insUpd = true;">Cancelar</button>
+    </form>
+
+    <table class="table mt-4">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let producto of productos">
+                <td>{{ producto.id }}</td>
+                <td>{{ producto.nombre }}</td>
+                <td>{{ producto.precio | currency:'PEN ':'S/.' }}</td>
+                <td>
+                    <button (click)="editarProducto(producto)">Editar</button>
+                    <button (click)="eliminarProducto(producto.id)">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
