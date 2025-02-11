@@ -34,3 +34,6 @@
 
 ### S05.s2 - Repaso - PC 2
 [![YouTube Video](https://img.youtube.com/vi/BRxthImaGVg/1.jpg)](https://www.youtube.com/watch?v=BRxthImaGVg)
+
+### S06.s1 - S06.s1 - React, crear proyecto, JSX, TSX, importar Bootstrap, componentes
+[![YouTube Video](https://img.youtube.com/vi/-BaPhx46dcY/1.jpg)](https://www.youtube.com/watch?v=-BaPhx46dcY)
