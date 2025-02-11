@@ -32,4 +32,5 @@
 ### S05.s1 - Métodos REST, JSON, Postman, Thunder Client, Insomnia
 [![YouTube Video](https://img.youtube.com/vi/4JkY-Auz48c/1.jpg)](https://www.youtube.com/watch?v=4JkY-Auz48c)
 
-
+### S05.s2 - Repaso - PC 2
+[![YouTube Video](https://img.youtube.com/vi/BRxthImaGVg/1.jpg)](https://www.youtube.com/watch?v=BRxthImaGVg)
