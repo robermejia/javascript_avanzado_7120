@@ -1,0 +1,9 @@
+header, footer{
+    text-align: center;
+    background-color: rgb(186, 224, 129);
+    padding: 1rem 0rem;
+}
+
+main{
+    margin: 1rem 0rem;
+}
