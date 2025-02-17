@@ -37,3 +37,6 @@
 
 ### S06.s1 - React, crear proyecto, JSX, TSX, importar Bootstrap, componentes
 [![YouTube Video](https://img.youtube.com/vi/-BaPhx46dcY/1.jpg)](https://www.youtube.com/watch?v=-BaPhx46dcY)
+
+### S06.s2 - Componentes, Formularios, Navegación
+[![YouTube Video](https://img.youtube.com/vi/eM-Vne9yK_Y/1.jpg)](https://www.youtube.com/watch?v=eM-Vne9yK_Y)
