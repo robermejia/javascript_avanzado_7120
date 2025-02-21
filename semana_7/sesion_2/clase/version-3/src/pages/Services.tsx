@@ -1,18 +1,20 @@
-import {FC} from "react";
-import {Outlet} from "react-router-dom";
+import { FC } from "react";
+import { Link, Outlet } from "react-router-dom";
 
-
-const Services: FC = () => {
-    <>
-        <h3>Consumo de API con React</h3>
+const Services : FC = () => {
+    return(<>
+        <h3>Consumir de API con React</h3>
         <div className="d-flex justify-content-around">
-            <link className="btn btn-sm btn-outline-primary" to={"fetch"}>Fetch</link>
-            <link className="btn btn-sm btn-outline-primary" to={"axios"}>Axios</link>
-            <link className="btn btn-sm btn-outline-primary" to={"alova"}>Alova</link>
+            <Link to={"fetch"} className="btn btn-sm btn-outline-primary">Fetch</Link>
+            <Link to={"axios"} className="btn btn-sm btn-outline-primary">Axios</Link>
+            <Link to={"alova"} className="btn btn-sm btn-outline-primary">Alova</Link>
+            <Link to={"prueba"} className="btn btn-sm btn-outline-primary">Prueba</Link>
         </div>
+        
         <hr />
-        <Outlet />  
-    </>
+        <Outlet/>
+    </>)
+
 }
 
 export default Services

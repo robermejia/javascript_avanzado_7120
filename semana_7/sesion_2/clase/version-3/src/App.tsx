@@ -4,6 +4,8 @@ import './App.css'
 import HeaderComponent from './components/HeaderComponent';
 import FooterComponent from './components/FooterComponent';
 import { Outlet } from 'react-router-dom';
+import Services from './pages/Services';
+
 
 /*
 import reactLogo from './assets/react.svg'

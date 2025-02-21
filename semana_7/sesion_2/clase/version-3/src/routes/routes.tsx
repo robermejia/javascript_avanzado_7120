@@ -4,10 +4,17 @@ import HomeComponent from "../pages/HomeComponent";
 import SimpleForm from "../pages/SimpleForm";
 import UncontrolForm from "../pages/UncontrolForm";
 import ControlForm from "../pages/ControlForm";
-import StateHook from "../pages/StateHook";
+
 import ContextHook from "../pages/ContextHook";
 import RefHook from "../pages/RefHook";
 import EffectsHook from "../pages/EffectsHook";
+import Services from "../pages/Services";
+import FetchService from "../pages/FetchService";
+import AxiosService from "../pages/AxiosService";
+import AlovaService from "../pages/AlovaService";
+import PruebaService from "../pages/PruebaService";
+
+
 
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={<App />} errorElement={<>Regresar</>}>
@@ -16,7 +23,12 @@ const router = createBrowserRouter(createRoutesFromElements(
             <Route path={"form-simple"} element={<SimpleForm />} />
             <Route path={"form-sin-control"} element={<UncontrolForm />} />
             <Route path={"form-con-control"} element={<ControlForm />} />
-            <Route path={"hook-state"} element={<StateHook />} />
+            <Route path={"servicios"} element={<Services />}>
+                <Route path={"fetch"} element={<FetchService />} />
+                <Route path={"axios"} element={<AxiosService />} />
+                <Route path={"alova"} element={<AlovaService />} />
+                <Route path={"prueba"} element={<PruebaService />} />
+            </Route>
             <Route path={"hook-ref"} element={<RefHook />} />
             <Route path={"hook-context"} element={<ContextHook />} />
             <Route path={"hook-effects"} element={<EffectsHook />} />
