@@ -40,3 +40,18 @@
 
 ### S06.s2 - Componentes, Formularios, Navegación
 [![YouTube Video](https://img.youtube.com/vi/eM-Vne9yK_Y/1.jpg)](https://www.youtube.com/watch?v=eM-Vne9yK_Y)
+
+### S07.s1 - Hooks
+[![YouTube Video](https://img.youtube.com/vi/Srz70hSKJP0/1.jpg)](https://www.youtube.com/watch?v=Srz70hSKJP0)
+
+### S07.s2 - REST (Fetch API, Axios, Alova)
+[![YouTube Video](https://img.youtube.com/vi/vZeThr7y8Gk/1.jpg)](https://www.youtube.com/watch?v=vZeThr7y8Gk)
+
+### S08.s1 - PC 3
+[![YouTube Video](https://img.youtube.com/vi/zPGmZW_Z6bs/1.jpg)](https://www.youtube.com/watch?v=zPGmZW_Z6bs)
+
+### S08.s2 - Vue.js y Next.js - parte 1
+[![YouTube Video](https://img.youtube.com/vi/8VlMNZzL6Kc/1.jpg)](https://www.youtube.com/watch?v=8VlMNZzL6Kc)
+
+### S08.s2 - Vue.js y Next.js - parte 2
+[![YouTube Video](https://img.youtube.com/vi/aM2Ik4f2aUM/1.jpg)](https://www.youtube.com/watch?v=aM2Ik4f2aUM)
