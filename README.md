@@ -55,3 +55,6 @@
 
 ### S08.s2 - Vue.js y Next.js - parte 2
 [![YouTube Video](https://img.youtube.com/vi/aM2Ik4f2aUM/1.jpg)](https://www.youtube.com/watch?v=aM2Ik4f2aUM)
+
+### S09.s1 - Examen Final
+[![YouTube Video](https://img.youtube.com/vi/6LNVwm7qkZA/1.jpg)](https://www.youtube.com/watch?v=6LNVwm7qkZA)
